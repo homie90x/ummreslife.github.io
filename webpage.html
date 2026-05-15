@@ -1,8 +1,191 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <Title>
-        Office of Residential Life 
-        </Title>
-    </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Brand — Tagline Here</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#" class="nav__logo">Brand</a>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn--outline">Get in touch</a>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero__eyebrow">Est. 2025</div>
+    <h1 class="hero__title">
+      Craft that<br />
+      <em>speaks</em> for itself
+    </h1>
+    <p class="hero__sub">
+      Replace this with your bold one-liner — what you do and why it matters.
+    </p>
+    <div class="hero__actions">
+      <a href="#work" class="btn btn--primary">See our work</a>
+      <a href="#about" class="btn btn--ghost">Learn more ↓</a>
+    </div>
+    <div class="hero__scroll-line"></div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="about__label">About</div>
+    <div class="about__grid">
+      <div class="about__image-wrap">
+        <div class="about__image-placeholder">
+          <!-- Replace with <img src="your-photo.jpg" alt="About us" /> -->
+          <span>Your Image</span>
+        </div>
+      </div>
+      <div class="about__text">
+        <h2 class="section__heading">We believe in doing fewer things, better.</h2>
+        <p>
+          This is where you tell your story. Keep it honest, keep it human. Talk about
+          your mission, your values, or what drives the work you do every day.
+        </p>
+        <p>
+          A second paragraph can go here — add more depth, a personal touch, or
+          a brief history of how you got started.
+        </p>
+        <a href="#services" class="link-arrow">What we offer →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services" id="services">
+    <div class="services__header">
+      <div class="about__label">Services</div>
+      <h2 class="section__heading">What we do</h2>
+    </div>
+    <div class="services__grid">
+      <div class="service-card">
+        <div class="service-card__icon">01</div>
+        <h3>Service One</h3>
+        <p>A brief description of this service and the value it delivers to your clients.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-card__icon">02</div>
+        <h3>Service Two</h3>
+        <p>A brief description of this service and the value it delivers to your clients.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-card__icon">03</div>
+        <h3>Service Three</h3>
+        <p>A brief description of this service and the value it delivers to your clients.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-card__icon">04</div>
+        <h3>Service Four</h3>
+        <p>A brief description of this service and the value it delivers to your clients.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK / PORTFOLIO -->
+  <section class="section work" id="work">
+    <div class="about__label">Work</div>
+    <h2 class="section__heading">Selected projects</h2>
+    <div class="work__grid">
+      <article class="work-card work-card--large">
+        <div class="work-card__img-wrap">
+          <div class="work-card__img-placeholder"><span>Project Image</span></div>
+        </div>
+        <div class="work-card__body">
+          <span class="work-card__tag">Category</span>
+          <h3>Project Title One</h3>
+          <a href="#" class="link-arrow">View case study →</a>
+        </div>
+      </article>
+      <article class="work-card">
+        <div class="work-card__img-wrap">
+          <div class="work-card__img-placeholder"><span>Project Image</span></div>
+        </div>
+        <div class="work-card__body">
+          <span class="work-card__tag">Category</span>
+          <h3>Project Title Two</h3>
+          <a href="#" class="link-arrow">View case study →</a>
+        </div>
+      </article>
+      <article class="work-card">
+        <div class="work-card__img-wrap">
+          <div class="work-card__img-placeholder"><span>Project Image</span></div>
+        </div>
+        <div class="work-card__body">
+          <span class="work-card__tag">Category</span>
+          <h3>Project Title Three</h3>
+          <a href="#" class="link-arrow">View case study →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="section testimonial">
+    <blockquote class="quote">
+      <p class="quote__text">
+        "Add a compelling testimonial here — ideally something specific that
+        illustrates the real impact of your work."
+      </p>
+      <footer class="quote__author">
+        <strong>Client Name</strong> — Company / Title
+      </footer>
+    </blockquote>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="about__label">Contact</div>
+    <h2 class="section__heading">Let's work together</h2>
+    <p class="contact__sub">Got a project in mind? Drop us a line and we'll get back to you within 24 hours.</p>
+    <form class="contact__form" action="#" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project…" required></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary">Send message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <span class="nav__logo">Brand</span>
+      <ul class="footer__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 Brand. All rights reserved.</span>
+      <span>Made with care.</span>
+    </div>
+  </footer>
+
+</body>
 </html>
