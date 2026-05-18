@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Brand — Tagline Here</title>
+  <title>UMM Residential life</title>
   <link rel="stylesheet" href="webpage.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,120 +13,150 @@
 
   <!-- NAV -->
   <nav class="nav">
-    <a href="#" class="nav__logo">Brand</a>
+    <a href="#">
+      <img src="images/logo.png" alt="UMN Logo" width="100">
+    </a>
     <ul class="nav__links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#Tours">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#">
+          <img src="images/orl logo.png" alt="ORL Logo" width="50">
+        </a>
+      </li>
     </ul>
     <a href="#contact" class="btn btn--outline">Contact Us</a>
   </nav>
 
   <!-- HERO -->
+  <video autoplay muted loop id="myVideo">
+    <source src="videos/1.MOV" type="video/mp4">
+  </video>
+
   <header class="hero">
-    <div class="hero__eyebrow">Est. 2025</div>
     <h1 class="hero__title">
-      Craft that<br />
-      <em>speaks</em> for itself
+      The Office
+      <em>of</em> Residential & Community Life
     </h1>
     <p class="hero__sub">
-      Replace this with your bold one-liner — what you do and why it matters.
+      Resource Page
     </p>
     <div class="hero__actions">
-      <a href="#work" class="btn btn--primary">See our work</a>
-      <a href="#about" class="btn btn--ghost">Learn more ↓</a>
+      <a href="#about" class="btn btn--primary">Virtual Tours of our Halls ↓</a>
     </div>
     <div class="hero__scroll-line"></div>
   </header>
 
-  <!-- ABOUT -->
-  <section class="section about" id="about">
-    <div class="about__label">About</div>
-    <div class="about__grid">
-      <div class="about__image-wrap">
-        <div class="about__image-placeholder">
-          <!-- Replace with <img src="your-photo.jpg" alt="About us" /> -->
-          <span>Your Image</span>
+ <section class="section" id="tours">
+    <div class="section__label">Explore Campus</div>
+    <h2 class="section__heading">Virtual Tours of Our Halls</h2>
+    <p class="section__intro">
+      Can't visit in person? Take a virtual tour of each residence hall and find the community that fits you best.
+    </p>
+
+    <div class="tours__grid">
+
+      <a href="https://massinteract.com/university-of-minnesota-morris/#media-name=Residential%20Life%20-%20David%20C%20Johnson%20Independence%20Hall%20-%20Double%20Occupancy%20Room&yaw=99.58&pitch=0.44&fov=110.00" target="_blank" class="tour-card tour-card--featured">
+        <div class="tour-card__img" style="background: linear-gradient(135deg, #7a0019 0%, #3d000d 100%);">
+          <div class="tour-card__img-icon">🏛️</div>
         </div>
-      </div>
-      <div class="about__text">
-        <h2 class="section__heading">We believe in doing fewer things, better.</h2>
-        <p>
-          This is where you tell your story. Keep it honest, keep it human. Talk about
-          your mission, your values, or what drives the work you do every day.
-        </p>
-        <p>
-          A second paragraph can go here — add more depth, a personal touch, or
-          a brief history of how you got started.
-        </p>
-        <a href="#services" class="link-arrow">What we offer →</a>
-      </div>
+        <div class="tour-card__body">
+          <span class="tour-card__badge">Featured Hall</span>
+          <h3>Independence Hall</h3>
+          <p>Indy is favored by student-athletes and those who appreciate its location close to the Cougar Sports and Regional Fitness Center, the Dining Hall, and the Campus Convenience Store.</p>
+          <span class="link-arrow">Take Virtual Tour →</span>
+        </div>
+      </a>
+
+      <a href="https://massinteract.com/university-of-minnesota-morris/#media-name=Academics%20-%20Blakely%20Hall&yaw=134.14&pitch=-0.00&fov=110.00" target="_blank" class="tour-card">
+        <div class="tour-card__img" style="background: linear-gradient(135deg, #b5882a 0%, #7a5e18 100%);">
+          <div class="tour-card__img-icon">🌿</div>
+        </div>
+        <div class="tour-card__body">
+          <h3>Blakely Hall</h3>
+          <p>Blakely Hall is situated in between the Dining Hall and the Campus Mall. It is home to 30 upper-division residents in single rooms. In collaboration with the Morris Food Justice Initiative, each resident room in this hall includes a small refrigerator/freezer unit. </p>
+          <span class="link-arrow">Take Virtual Tour →</span>
+        </div>
+      </a>
+
+      <a href="https://massinteract.com/university-of-minnesota-morris/#media-name=Residential%20Life%20-%20Spooner%20Hall%20-%20Double%20Occupancy%20Room&yaw=178.89&pitch=-0.45&fov=110.00" target="_blank" class="tour-card">
+        <div class="tour-card__img" style="background: linear-gradient(135deg, #1a4a6e 0%, #0d2b40 100%);">
+          <div class="tour-card__img-icon">⭐</div>
+        </div>
+        <div class="tour-card__body">
+          <h3>Spooner Hall</h3>
+          <p>Spooner Hall is conveniently located in the center of campus and close to the Campus Mall green space. It houses 90 first-year residents and floor options include gender-designated and gender-inclusive.</p>
+          <span class="link-arrow">Take Virtual Tour →</span>
+        </div>
+      </a>
+
+      <a href="https://massinteract.com/university-of-minnesota-morris/#media-name=Residential%20Life%20-%20Clayton%20A%20Gay%20Hall%20-%20Double%20Occupancy%20Room&yaw=2.99&pitch=-0.45&fov=110.00" target="_blank" class="tour-card">
+        <div class="tour-card__img" style="background: linear-gradient(135deg, #2d6a2d 0%, #193d19 100%);">
+          <div class="tour-card__img-icon">🌲</div>
+        </div>
+        <div class="tour-card__body">
+          <h3>Gay Hall</h3>
+          <p>Clayton A. Gay Hall is composed of two towers that house 115 upper-division residents. All resident floors have two air-conditioned lounges which include study areas, dry-erase boards, and television. Clayton A. Gay Hall is conveniently located near the Cougar Sports and Regional Fitness Center and the Dining Hall.</p>
+          <span class="link-arrow">Take Virtual Tour →</span>
+        </div>
+      </a>
+
+      <a href="https://massinteract.com/university-of-minnesota-morris/#media-name=Residential%20Life%20-%20On-Campus%20Apartments&yaw=59.70&pitch=0.44&fov=110.00" target="_blank" class="tour-card">
+        <div class="tour-card__img" style="background: linear-gradient(135deg, #5a3472 0%, #321d40 100%);">
+          <div class="tour-card__img-icon">🏠</div>
+        </div>
+        <div class="tour-card__body">
+          <h3>The Apartments</h3>
+          <p>Suite-style apartment living for upper-class and graduate students looking for more independence.</p>
+          <span class="link-arrow">Take Virtual Tour →</span>
+        </div>
+      </a>
+
+            <a href="https://massinteract.com/university-of-minnesota-morris/#media-name=Residential%20Life%20-%20On-Campus%20Apartments&yaw=59.70&pitch=0.44&fov=110.00" target="_blank" class="tour-card">
+        <div class="tour-card__img" style="background: linear-gradient(135deg, #5a3472 0%, #321d40 100%);">
+          <div class="tour-card__img-icon">🏠</div>
+        </div>
+        <div class="tour-card__body">
+          <h3>Green Prarie</h3>
+          <p>Green Prairie Community is our newest residential life facility and houses 72 upper-division residents.</p>
+          <span class="link-arrow">Take Virtual Tour →</span>
+        </div>
+      </a>
+
     </div>
   </section>
 
-  <!-- SERVICES -->
-  <section class="section services" id="services">
-    <div class="services__header">
-      <div class="about__label">Services</div>
-      <h2 class="section__heading">What we do</h2>
-    </div>
-    <div class="services__grid">
-      <div class="service-card">
-        <div class="service-card__icon">01</div>
-        <h3>Service One</h3>
-        <p>A brief description of this service and the value it delivers to your clients.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-card__icon">02</div>
-        <h3>Service Two</h3>
-        <p>A brief description of this service and the value it delivers to your clients.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-card__icon">03</div>
-        <h3>Service Three</h3>
-        <p>A brief description of this service and the value it delivers to your clients.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-card__icon">04</div>
-        <h3>Service Four</h3>
-        <p>A brief description of this service and the value it delivers to your clients.</p>
-      </div>
-    </div>
-  </section>
 
   <!-- WORK / PORTFOLIO -->
   <section class="section work" id="work">
-    <div class="about__label">Work</div>
-    <h2 class="section__heading">Selected projects</h2>
+    <div class="about__label">Applications</div>
+    <h2 class="section__heading">Apply for Housing</h2>
     <div class="work__grid">
       <article class="work-card work-card--large">
         <div class="work-card__img-wrap">
-          <div class="work-card__img-placeholder"><span>Project Image</span></div>
+          <div class="work-card__img-placeholder"><span>Image</span></div>
         </div>
         <div class="work-card__body">
           <span class="work-card__tag">Category</span>
-          <h3>Project Title One</h3>
-          <a href="#" class="link-arrow">View case study →</a>
+          <h3>Apply for Housing</h3>
+          <a href="https://umnmorris.erezlife.com/" class="link-arrow">Click here to apply</a>
         </div>
       </article>
       <article class="work-card">
         <div class="work-card__img-wrap">
-          <div class="work-card__img-placeholder"><span>Project Image</span></div>
+          <div class="work-card__img-placeholder"><span>Image</span></div>
         </div>
         <div class="work-card__body">
           <span class="work-card__tag">Category</span>
-          <h3>Project Title Two</h3>
-          <a href="#" class="link-arrow">View case study →</a>
+          <h3>Work with us</h3>
+          <a href="#" class="link-arrow">Click here to apply</a>
         </div>
       </article>
       <article class="work-card">
         <div class="work-card__img-wrap">
-          <div class="work-card__img-placeholder"><span>Project Image</span></div>
+          <div class="work-card__img-placeholder"><span>Image</span></div>
         </div>
         <div class="work-card__body">
           <span class="work-card__tag">Category</span>
-          <h3>Project Title Three</h3>
-          <a href="#" class="link-arrow">View case study →</a>
+          <h3>---</h3>
+          <a href="#" class="link-arrow">Click here to apply</a>
         </div>
       </article>
     </div>
@@ -136,52 +166,18 @@
   <section class="section testimonial">
     <blockquote class="quote">
       <p class="quote__text">
-        "Add a compelling testimonial here — ideally something specific that
-        illustrates the real impact of your work."
+        "Welcome to Our Community"
       </p>
       <footer class="quote__author">
-        <strong>Client Name</strong> — Company / Title
+        <strong></strong> - Office of Residential Life
       </footer>
     </blockquote>
   </section>
 
-  <!-- CONTACT -->
-  <section class="section contact" id="contact">
-    <div class="about__label">Contact</div>
-    <h2 class="section__heading">Follow us on social media</h2>
-    <form class="contact__form" action="#" method="POST">
-      <div class="form-row">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Jane Smith" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="jane@example.com" required />
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project…" required></textarea>
-      </div>
-      <button type="submit" class="btn btn--primary">Send message</button>
-    </form>
-  </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer__top">
-      <span class="nav__logo">Brand</span>
-      <ul class="footer__links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer__bottom">
-      <span>© 2025 Brand. All rights reserved.</span>
-      <span>Made with care.</span>
+      <span>© 2026 Regents of the University of Minnesota. All rights reserved. The University of Minnesota is an equal opportunity educator and employer.</span>
     </div>
   </footer>
 

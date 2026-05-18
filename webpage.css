@@ -8,14 +8,14 @@
    CSS VARIABLES
    ---------------------------------------------------------- */
 :root {
-  --clr-bg:         #F7F4EE;
-  --clr-ink:        #1A1714;
-  --clr-muted:      #7A7168;
-  --clr-accent:     #C4622D;
-  --clr-accent-lt:  #EDD9CA;
-  --clr-border:     #DDD8CE;
+  --clr-bg:         #ffffff;
+  --clr-ink:        #7a0019;
+  --clr-muted:      #5c0014;
+  --clr-accent:     #7a0019;
+  --clr-accent-lt:  #f5e090;
+  --clr-border:     #d4a800;
   --clr-white:      #FFFFFF;
-  --clr-card-bg:    #EEE9DF;
+  --clr-card-bg:    #ffe066;
 
   --ff-display: 'Playfair Display', Georgia, serif;
   --ff-body:    'DM Sans', sans-serif;
@@ -28,18 +28,18 @@
   --fz-2xl:  2rem;
   --fz-3xl:  2.75rem;
   --fz-4xl:  4rem;
-  --fz-hero: clamp(3rem, 7vw, 6.5rem);
+  --fz-hero: clamp(4rem, 9vw, 8rem);
 
   --radius:  4px;
   --radius-lg: 12px;
 
-  --shadow-sm: 0 1px 3px rgba(26,23,20,.08);
-  --shadow-md: 0 4px 16px rgba(26,23,20,.12);
+  --shadow-sm: 0 1px 3px rgba(122,0,25,.12);
+  --shadow-md: 0 4px 16px rgba(122,0,25,.18);
 
   --transition: 220ms ease;
 
   --max-w: 1200px;
-  --section-pad: clamp(5rem, 10vw, 9rem);
+  --section-pad: clamp(2.5rem, 5vw, 4.5rem);
 }
 
 /* ----------------------------------------------------------
@@ -47,10 +47,20 @@
    ---------------------------------------------------------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+html { 
+  scroll-behavior: smooth; 
+}
+
+#myVideo {
+  width: 100vw;
+  height: 50vh;
+  object-fit: cover;
+}
+
 
 body {
-  font-family: var(--ff-body);
+  font-family: 'custom';
+  src: ur('fonts/Neurtaface Text Bold.otf') format('truetype');
   font-size: var(--fz-base);
   line-height: 1.7;
   color: var(--clr-ink);
@@ -82,7 +92,7 @@ p {
   margin-bottom: 1rem;
 }
 
-em { font-style: italic; color: var(--clr-accent); }
+em { font-style: italic; color: var(--clr-ink); }
 
 .link-arrow {
   display: inline-flex;
@@ -92,7 +102,7 @@ em { font-style: italic; color: var(--clr-accent); }
   font-size: var(--fz-sm);
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--clr-accent);
+  color: var(--clr-ink);
   transition: gap var(--transition);
 }
 .link-arrow:hover { gap: 0.6em; }
@@ -137,11 +147,11 @@ em { font-style: italic; color: var(--clr-accent); }
 .btn:active { transform: translateY(0); }
 
 .btn--primary {
-  background: var(--clr-accent);
+  background: var(--clr-ink);
   color: var(--clr-white);
-  border-color: var(--clr-accent);
+  border-color: var(--clr-ink);
 }
-.btn--primary:hover { background: #a94e23; border-color: #a94e23; }
+.btn--primary:hover { background: #4d0010; border-color: #4d0010; }
 
 .btn--outline {
   background: transparent;
@@ -170,7 +180,7 @@ em { font-style: italic; color: var(--clr-accent); }
   justify-content: space-between;
   gap: 2rem;
   padding: 1.25rem 2.5rem;
-  background: rgba(247,244,238,0.88);
+  background: rgba(255, 204, 51, 0.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--clr-border);
 }
@@ -203,8 +213,9 @@ em { font-style: italic; color: var(--clr-accent); }
   position: relative;
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: clamp(5rem, 12vw, 10rem) 2rem clamp(4rem, 8vw, 7rem);
+  padding: clamp(2.5rem, 6vw, 5rem) 2rem clamp(2rem, 4vw, 3.5rem);
   overflow: hidden;
+  text-align: center;
 }
 
 .hero__eyebrow {
@@ -217,7 +228,8 @@ em { font-style: italic; color: var(--clr-accent); }
 }
 
 .hero__title {
-  font-family: var(--ff-display);
+  font-family: 'custom';
+  src: ur('fonts/Neutraface Text Bold.otf') format('truetype');
   font-size: var(--fz-hero);
   font-weight: 900;
   line-height: 1.0;
@@ -225,6 +237,7 @@ em { font-style: italic; color: var(--clr-accent); }
   color: var(--clr-ink);
   margin-bottom: 1.75rem;
   animation: fadeUp 0.6s 0.1s ease both;
+  text-align: center;
 }
 
 .hero__sub {
@@ -233,11 +246,14 @@ em { font-style: italic; color: var(--clr-accent); }
   color: var(--clr-muted);
   margin-bottom: 2.5rem;
   animation: fadeUp 0.6s 0.2s ease both;
+  text-align: center;
+
 }
 
 .hero__actions {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1.25rem;
   flex-wrap: wrap;
   animation: fadeUp 0.6s 0.3s ease both;
@@ -283,48 +299,56 @@ em { font-style: italic; color: var(--clr-accent); }
 .about__text .section__heading { max-width: 20ch; }
 
 /* ----------------------------------------------------------
-   SERVICES
+   Virtual Tours
    ---------------------------------------------------------- */
-.services { background: transparent; }
 
-.services__header { margin-bottom: 3rem; }
-
-.services__grid {
+.tours__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1.25rem;
 }
 
-.service-card {
-  background: var(--clr-card-bg);
-  border: 1px solid var(--clr-border);
-  border-radius: var(--radius-lg);
-  padding: 2.5rem 2rem;
-  transition: transform var(--transition), box-shadow var(--transition);
+.tour-card--featured {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
 }
 
-.service-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
+
+
+
+.tour-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
 }
 
-.service-card__icon {
-  font-family: var(--ff-display);
-  font-size: var(--fz-2xl);
-  font-weight: 900;
-  color: var(--clr-accent-lt);
-  margin-bottom: 1.25rem;
-  line-height: 1;
+.tour-card__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  flex-shrink: 0;
 }
 
-.service-card h3 {
-  font-family: var(--ff-display);
-  font-size: var(--fz-xl);
-  font-weight: 700;
-  margin-bottom: 0.75rem;
+.tour-card--featured .tour-card__img {
+  min-height: 280px;
 }
 
-.service-card p { font-size: var(--fz-sm); margin: 0; }
+.tour-card__img-icon {
+  font-size: 3.5rem;
+  opacity: 0.8;
+}
+
+.tour-card__body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+
 
 /* ----------------------------------------------------------
    WORK
@@ -583,3 +607,8 @@ em { font-style: italic; color: var(--clr-accent); }
 
   .services__grid { grid-template-columns: 1fr; }
 }
+
+
+/* ----------------------------------------------------------
+   VIDSOS
+   ---------------------------------------------------------- */
