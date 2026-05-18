@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UMM Residential Life</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#" class="nav__logo-link">
+      <img src="images/logo.png" alt="UMN Logo" width="90">
+    </a>
+    <ul class="nav__links">
+      <li><a href="#about">Virtual Tours</a></li>
+      <li><a href="#services">Halls</a></li>
+      <li><a href="#work">Housing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn--outline">Contact Us</a>
+  </nav>
+
+  <!-- HERO -->
+  <video autoplay muted loop id="myVideo">
+    <source src="videos/1.MOV" type="video/mp4">
+  </video>
+
+  <header class="hero">
+    <div class="hero__inner">
+      <p class="hero__eyebrow">University of Minnesota Morris</p>
+      <h1 class="hero__title">
+        The Office <em>of</em><br>Residential Life
+      </h1>
+      <p class="hero__sub">Resource Page — Your home away from home</p>
+      <div class="hero__actions">
+        <a href="#about" class="btn btn--gold">Explore Virtual Tours ↓</a>
+        <a href="#work" class="btn btn--ghost-gold">Apply for Housing →</a>
+      </div>
+    </div>
+    <div class="hero__wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#6a0016"/>
+      </svg>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="about__label">About</div>
+    <div class="about__grid">
+      <div class="about__image-wrap">
+        <div class="about__image-placeholder">
+          <span>Your Image</span>
+        </div>
+      </div>
+      <div class="about__text">
+        <h2 class="section__heading">Virtual Tours</h2>
+        <p>Explore the residence hall options on our campus.</p>
+        <p>Click on the links below to view individual halls.</p>
+        <a href="#services" class="link-arrow">Our halls →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES / HALLS -->
+  <section class="section services" id="services">
+    <div class="services__header">
+      <div class="about__label">Virtual Tours</div>
+      <h2 class="section__heading">Our Residence Halls</h2>
+    </div>
+    <div class="services__grid">
+      <div class="service-card">
+        <div class="service-card__num">01</div>
+        <h3>Independence Hall</h3>
+        <p>One of the largest residence halls on campus, housing mostly first-year students.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-card__num">02</div>
+        <h3>Spooner Hall</h3>
+        <p>Spooner Description</p>
+      </div>
+      <div class="service-card">
+        <div class="service-card__num">03</div>
+        <h3>Pine Hall</h3>
+        <p>Pine Hall Description</p>
+      </div>
+      <div class="service-card">
+        <div class="service-card__num">04</div>
+        <h3>Green Prairie</h3>
+        <p>Green Prairie Description</p>
+      </div>
+      <div class="service-card">
+        <div class="service-card__num">05</div>
+        <h3>Gay Hall</h3>
+        <p>Gay Hall Description</p>
+      </div>
+      <div class="service-card">
+        <div class="service-card__num">06</div>
+        <h3>The Apartments</h3>
+        <p>Suite-style apartment living for upper-class students.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK / HOUSING -->
+  <section class="section work" id="work">
+    <div class="about__label">Housing</div>
+    <h2 class="section__heading">Apply for Housing</h2>
+    <div class="work__grid">
+      <article class="work-card work-card--large">
+        <div class="work-card__img-wrap">
+          <div class="work-card__img-placeholder"><span>Project Image</span></div>
+        </div>
+        <div class="work-card__body">
+          <span class="work-card__tag">Category</span>
+          <h3>Project Title One</h3>
+          <a href="#" class="link-arrow">View case study →</a>
+        </div>
+      </article>
+      <article class="work-card">
+        <div class="work-card__img-wrap">
+          <div class="work-card__img-placeholder"><span>Project Image</span></div>
+        </div>
+        <div class="work-card__body">
+          <span class="work-card__tag">Category</span>
+          <h3>Project Title Two</h3>
+          <a href="#" class="link-arrow">View case study →</a>
+        </div>
+      </article>
+      <article class="work-card">
+        <div class="work-card__img-wrap">
+          <div class="work-card__img-placeholder"><span>Project Image</span></div>
+        </div>
+        <div class="work-card__body">
+          <span class="work-card__tag">Category</span>
+          <h3>Project Title Three</h3>
+          <a href="#" class="link-arrow">View case study →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="testimonial">
+    <blockquote class="quote">
+      <div class="quote__mark">"</div>
+      <p class="quote__text">
+        Add a compelling testimonial here — ideally something specific that
+        illustrates the real impact of your work.
+      </p>
+      <footer class="quote__author">
+        <strong>Client Name</strong> — Company / Title
+      </footer>
+    </blockquote>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="about__label">Get in Touch</div>
+    <h2 class="section__heading">Follow us on social media</h2>
+    <form class="contact__form" action="#" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help…" required></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary">Send message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <img src="images/logo.png" alt="UMN Logo" width="80" style="filter: brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(5deg);">
+      <ul class="footer__links">
+        <li><a href="#about">Virtual Tours</a></li>
+        <li><a href="#services">Halls</a></li>
+        <li><a href="#work">Housing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Regents of the University of Minnesota. All rights reserved. The University of Minnesota is an equal opportunity educator and employer.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
