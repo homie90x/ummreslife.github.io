@@ -30,6 +30,9 @@
   font-display: swap;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 /* ── Body ──────────────────────────────────────────────── */
 body {
   font-family: 'neutra', 'Georgia', serif;
