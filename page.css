@@ -147,7 +147,7 @@ main {
 /* ── Launcher Grid ─────────────────────────────────────── */
 .launcher-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 3rem;
   width: 100%;
   max-width: 1000px;
@@ -290,14 +290,7 @@ footer {
 
 .card:hover {
   transform: translateY(-6px);
-  background-color: var(--maroon);
-  box-shadow: 0 8px 24px rgba(122, 0, 25, 0.15);
 }
-
-.card:hover .card-content h3 { color: var(--gold); }
-.card:hover .card-content p  { color: var(--gold-light); }
-.card:hover .card-content a  { border-color: var(--gold); color: var(--gold); }
-.card:hover .card-content a:hover { background: var(--gold); color: var(--maroon); }
 
 .card img {
   width: 100%;
